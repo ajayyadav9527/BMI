@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px; /* Limit width for better readability */
+  width: 100%; /* Ensure container fills available width */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased spacing for better separation */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="number"] {
+  width: calc(
+    100% - 22px
+  ); /* Adjust width to fit container padding and border */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Larger font size for better visibility */
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 1.4em; /* Larger font size for result */
+  font-weight: bold;
+  color: #333;
+  padding: 20px; /* Add padding for better visibility */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.result p {
+  margin: 0; /* Remove default margin for p tag */
+}
+
+.result.underweight {
+  background-color: #ffc107; /* Orange for underweight */
+}
+
+.result.normal-weight {
+  background-color: #28a745; /* Green for normal weight */
+}
+
+.result.overweight {
+  background-color: #dc3545; /* Red for overweight */
+}
+
+.result.obese {
+  background-color: #fd7e14; /* Dark orange for obese */
+}
